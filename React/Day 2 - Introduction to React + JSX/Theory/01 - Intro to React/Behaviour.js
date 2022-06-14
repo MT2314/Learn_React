@@ -7,4 +7,4 @@ function Goodbye() {
 }
 // ? ReactDOM.render() is a fancy React function that that our React elements/components
 // ? and renders them on the page
-ReactDOM.render([<Hello />, <Goodbye />], document.getElementById("myDiv"));
+ReactDOM.render([<Hello />, <Goodbye />], document.getElementById("root"));
