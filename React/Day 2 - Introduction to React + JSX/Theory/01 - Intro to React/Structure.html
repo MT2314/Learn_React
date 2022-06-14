@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ? On a website, HTML describes the structure, CSS describes the styling and JavaScript 
+     ? controls the behavior. 
+     
+     * There is nothing else! React is just some scripts and a Component based Philosophy
+     * which makes development easier and more enjoyable for developers. 
+     * At the end, no matter what you use to build your website. Is translated to html and javascript. 
+
+<!-- * <head>: Contains information about a web page's properties and links to external related files. -->
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Intro to React</title>
+
+   <!-- ? REACT packages, JavaScript files that let the browser understand "convert" React to HTML & JavaScript -->
+   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<!-- * The <body> element contains all the contents of an HTML document, 
+     * such as headings, paragraphs, images, hyperlinks, tables, lists, etc. -->
+
+<body>
+
+   <!-- *  A container which will contain the React Code once it is RENDERED. 
+        *  The ID below is "mydiv" the naming doesn't matter and is usually called "root"-->
+   <div id="myDiv"></div>
+
+
+   <!-- * type => Specifies the type of the script. Default is application/javascript and reads regular javascript.
+   ?   React relies on Babel (popular transpiler) to "transpile" (translate) React's JSX (HTML combined with JavaScript) 
+   ?   to the standard html & javascript that browsers can understand-->
+   <!-- <script type="text/babel">
+
+      //  A small function when called returns "Hello World" to where it is called from. 
+      function Hello() {
+         return <h1>Hello World!</h1>;
+      }
+
+      // ReactDom.render() is a function included in the React package we linked in the <head>
+      // It is told to "CALL" the Hello function. And display the "RETURN" inside an element with the id 
+      // of 'mydiv'
+      ReactDOM.render(<Hello />, document.getElementById('myDiv'))
+
+   </script> -->
+
+   <!-- * The script, just like any JavaScript can be linked to from another page -->
+   <script src="01-Logic.js" type="text/babel">
+   </script>
+
+
+</body>
+
+</html>
