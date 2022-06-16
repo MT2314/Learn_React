@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Greeting text={greeting} userName={name} setGreeting={setGreeting} />
+      <Greeting text={greeting} name={name} setGreeting={setGreeting} />
     </div>
   );
 };
