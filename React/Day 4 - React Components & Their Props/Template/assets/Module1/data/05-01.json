@@ -1,0 +1,36 @@
+{
+	"iloStartText": "start of interactive learning activity multiple choice.",
+	"iloEndText": "end of activity",
+	"iloStartLink": "Take multiple choice or press link to skip to the end of activity.",
+	"iloEndLink": "press link to return to start of multiple choice",
+	"questions": [
+		{
+			"questionText": "In the epic Star Wars stories by George Lucas, Luke Skywalker is engaged in an ongoing combat against Dark Vader.",
+			"type": "single",
+			"questionImg": "../assets/Module1/img/01/05-01.png",
+			"questionImgAlt": "sample test alt text",
+			"answerOptions": [
+				{
+					"answerText": "Character vs Character",
+					"isCorrect": true,
+					"responseText": "That’s correct! Luke Skywalker and Dark Vader are both considered human or human-like characters."
+				},
+				{
+					"answerText": "Character vs Nature",
+					"isCorrect": false,
+					"responseText": "Try again! Did you think about how Luke Skywalker and Dark Vader are similar?"
+				},
+				{
+					"answerText": "Character vs Self",
+					"isCorrect": false,
+					"responseText": "Not quite! This is an example of Character vs Character conflict, since Luke Skywalker and Dark Vader are both human or human-like characters."
+				},
+				{
+					"answerText": "Character vs Technology",
+					"isCorrect": false,
+					"responseText": "Try again! Did you think about how Luke Skywalker and Dark Vader are similar?"
+				}
+			]
+		}
+	]
+}

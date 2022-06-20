@@ -1,0 +1,132 @@
+// ? Color Variables   --  Based on TVO COLORS - needs more
+$background: #f8f8f8;
+$tfo_purple: #932784;
+
+$heading: green;
+$alert: red;
+$discovery_blue: #00bfdf;
+$tfo_black: #414042;
+$tfo_black_hover: #414042;
+$tfo_black_border: #949494;
+$blue: #00a3bf;
+$white: #ffffff;
+$hover_outline: #bf7db7;
+$disabled_fill: #d4a9ce;
+$tfo_dark_purple: #3b144d;
+$tfo_component_buttons: #932784;
+$hover_fill: #7b0f6c;
+
+// ? Reset
+* {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// ? Media queries
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+h1,
+.h1 {
+  @include desktop {
+    font: normal normal bold 64px/80px Montserrat;
+  }
+  @include tablet {
+    font: normal normal bold 54px/67.5px Montserrat;
+  }
+  @include mobile {
+    font: normal normal bold 28px/35px Montserrat;
+  }
+}
+h2,
+.h2 {
+  @include desktop {
+    font: normal normal 600 48px/60px Montserrat;
+  }
+  @include tablet {
+    font: normal normal 600 40px/50px Montserrat;
+  }
+  @include mobile {
+    font: normal normal 600 21px/26px Montserrat;
+  }
+}
+h3,
+.h3 {
+  @include desktop {
+    font: normal normal 600 36px/45px Montserrat;
+  }
+  @include tablet {
+    font: normal normal 600 24px/30px Montserrat;
+  }
+  @include mobile {
+    font: normal normal 600 18px/22.5px Montserrat;
+  }
+}
+h4,
+.h4 {
+  @include desktop {
+    font: normal normal 600 28px/35px Montserrat;
+  }
+  @include tablet {
+    font: normal normal 600 20px/25px Montserrat;
+  }
+  @include mobile {
+    font: normal normal 600 16px/20px Montserrat;
+  }
+}
+p,
+ul,
+ol {
+  @include desktop {
+    font: normal normal 350 18px/27px Montserrat;
+  }
+  @include tablet {
+    font: normal normal 350 18px/27px Montserrat;
+  }
+  @include mobile {
+    font: normal normal 350 14px/21px Montserrat;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+.heading {
+  font-weight: 700;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+//Screen-reader only
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.visible-hidden {
+  visibility: hidden;
+}

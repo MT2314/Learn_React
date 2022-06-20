@@ -1,0 +1,31 @@
+import React from "react";
+import SideNav from "./Components/SideNav";
+
+{{#each pages}}
+import {{this}} from "./pages/{{this}}.js";
+{{/each}}
+
+const componentMapping = {
+	{{#each pages}}
+   {{this}},
+	{{/each}}
+};
+
+const App = () => {
+	const D2L = document.getElementById("d2l");
+	const PAGE = D2L.getAttribute("data-page");
+
+	const Component =
+		componentMapping[`${(PAGE[0].toUpperCase() + PAGE.slice(1)).replace(" ", "")}`];
+
+	return (
+		<>
+			<SideNav mapping={componentMapping} page={PAGE} />
+			<div className="Course">
+				<Component />
+			</div>
+		</>
+	);
+};
+
+export default App;

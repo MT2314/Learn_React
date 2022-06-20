@@ -1,0 +1,13 @@
+<svg id="ico_soumettre_travail" xmlns="http://www.w3.org/2000/svg" width="74.126" height="99.01" viewBox="0 0 74.126 99.01">
+  <g id="Rectangle_184" data-name="Rectangle 184" fill="#fff">
+    <path d="M 64.12542724609375 87.50959777832031 L 59.54899978637695 87.50959777832031 L 55.49803924560547 87.50959777832031 L 14.5834264755249 87.50959777832031 L 1.500001072883606 87.50959777832031 L 1.500001072883606 1.500007629394531 L 64.12542724609375 1.500007629394531 L 64.12542724609375 77.38221740722656 L 64.12542724609375 83.79731750488281 L 64.12542724609375 87.50959777832031 Z" stroke="none"/>
+    <path d="M 3 2.999992370605469 L 3 86.00959777832031 L 62.62542724609375 86.00959777832031 L 62.62542724609375 2.999992370605469 L 3 2.999992370605469 M 0 -7.62939453125e-06 L 65.62542724609375 -7.62939453125e-06 L 65.62542724609375 89.00959777832031 L 0 89.00959777832031 L 0 -7.62939453125e-06 Z" stroke="none" fill="#932784"/>
+  </g>
+  <path id="Vector_185" data-name="Vector 185" d="M0,0H47.567" transform="translate(9 9)" fill="none" stroke="#932784" stroke-linecap="round" stroke-width="3"/>
+  <path id="Vector_186" data-name="Vector 186" d="M0,0H47.567" transform="translate(9 17.711)" fill="none" stroke="#932784" stroke-linecap="round" stroke-width="3"/>
+  <path id="Vector_187" data-name="Vector 187" d="M0,0H31.064" transform="translate(9 25.453)" fill="none" stroke="#932784" stroke-linecap="round" stroke-width="3"/>
+  <path id="Vector_182" data-name="Vector 182" d="M0,0H44.654" transform="translate(9 32.228)" fill="none" stroke="#932784" stroke-linecap="round" stroke-width="3"/>
+  <path id="Vector_183" data-name="Vector 183" d="M0,0H45.625" transform="translate(9 40.939)" fill="none" stroke="#932784" stroke-linecap="round" stroke-width="3"/>
+  <path id="Vector_184" data-name="Vector 184" d="M0,0H31.064" transform="translate(9 48.682)" fill="none" stroke="#932784" stroke-linecap="round" stroke-width="3"/>
+  <path id="Vector_188" data-name="Vector 188" d="M9.795,61.723V56.292M37,61.723V56.292m0,0V47.9A22.835,22.835,0,0,0,39.97,40c.5-3.95.047-11.357,0-12.345a2.8,2.8,0,0,0-1.484-2.469c-.99-.494-19.292-5.432-19.292-5.432V3.95A4.7,4.7,0,0,0,14.247,0C9.795,0,9.795,3.95,9.795,3.95v15.8c-6.036,2.091-7.129,3.608-8.9,7.9a15.71,15.71,0,0,0,0,10.37c.765,2.028,8.9,9.876,8.9,9.876v8.394m27.207,0H9.795" transform="translate(32.425 37.286)" fill="#dec9db" stroke="#932784" stroke-width="3"/>
+</svg>

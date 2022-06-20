@@ -1,0 +1,41 @@
+import React, { useRef, Suspense, lazy } from "react";
+
+import { Bottom_Nav } from "./Components/Navigation.js";
+
+const componentMapping = {
+	{{#each pages}}
+	{{this}}: lazy(() => import(/* webpackChunkName: "{{this}}" */ "./pages/{{this}}.js")),
+	{{/each}}
+};
+const App = () => {
+	const d2l = document.getElementById("d2l");
+	const currentModule = d2l.getAttribute("data-module");
+	const challenge = d2l.getAttribute("data-challenge");
+	const page = d2l.getAttribute("data-page");
+
+	const NavRef = useRef(null);
+
+	const executeScroll = () => NavRef.current.scrollIntoView();
+
+	const Component =
+		componentMapping[`${(page[0].toUpperCase() + page.slice(1)).replace(" ", "")}`];
+
+
+	return (
+		<div className="Course" ref={NavRef}>
+			<Suspense fallback={<div>Loading...</div>}>
+				<Component />
+			{page && (
+				<Bottom_Nav
+					currentModule={currentModule}
+					challenge={challenge}
+					page={page.toLowerCase()}
+					executeScroll={executeScroll}
+				/>
+			)}
+			</Suspense>
+		</div>
+	);
+};
+
+export default App;

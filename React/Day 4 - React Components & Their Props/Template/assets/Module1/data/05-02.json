@@ -1,0 +1,37 @@
+{
+	"iloStartText": "start of interactive learning activity multiple choice.",
+	"iloEndText": "end of activity",
+	"iloStartLink": "Take multiple choice or press link to skip to the end of activity.",
+	"iloEndLink": "press link to return to start of multiple choice",
+	"questions": [
+		{
+			"questionText": "In the novel Family Matters by Canadian writer Rohinton Mistry, the character Nariman Vakeel is afflicted by Parkinson’s disease and is haunted by memories of his past.",
+			"type": "single",
+			"questionImg": "../assets/Module1/img/01/05-01.png",
+
+			"questionImgAlt": "sample test alt text",
+			"answerOptions": [
+				{
+					"answerText": "Character vs Character",
+					"isCorrect": false,
+					"responseText": "Try again! Did you think about how paranoia is an internal struggle?"
+				},
+				{
+					"answerText": "Character vs Nature",
+					"isCorrect": false,
+					"responseText": "Not quite! Nariman Vakeel struggles with Character vs Self conflict (his own memories)."
+				},
+				{
+					"answerText": "Character vs Self",
+					"isCorrect": true,
+					"responseText": "That’s correct! Nariman Vakeel struggles with Character vs Self conflict (his own memories)."
+				},
+				{
+					"answerText": "Character vs Society",
+					"isCorrect": false,
+					"responseText": "Not quite! Nariman Vakeel struggles with Character vs Self conflict (his own memories)."
+				}
+			]
+		}
+	]
+}

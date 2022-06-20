@@ -1,0 +1,60 @@
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>
+			{{title}}
+		</title>
+	</head>
+	<body>
+
+		<!---  
+    *
+    *   This is the main template for the application.
+    *   It is the root of the application and is responsible for rendering the
+    *   application's layout.
+    *
+    -->
+		<div id="root"></div>
+
+		<!---
+    *
+    *   Additional data used by the application
+    *  
+    *   Attributes are used to pass data to the application (Navigation, etc)
+    *
+    *        - data-module - The name of the module to load
+    *        - data-challenge - The name of the challenge to load
+    *        - data-page - The name of the page to load
+    *
+    -->
+		<div id="d2l" data-module="{{module}}" data-challenge="{{challenge}}" data-page="{{page}}">
+
+			<!---  
+      *
+      *   All discussion links used in this specific page
+      *
+      -->
+			{{#each discussion}}
+				<a id="bs-tool-discussion-{{@key}}" href="{{this}}"></a>
+			{{/each}}
+
+			<!---  
+      *
+      *   All Drop box links used in this specific page
+      *
+      -->
+			{{#each dropbox}}
+				<a id="bs-tool-dropbox-{{@key}}" href="{{this}}"></a>
+			{{/each}}
+		</div>
+	</body>
+
+</html>

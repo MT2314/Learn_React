@@ -1,0 +1,36 @@
+{
+	"iloStartText": "start of interactive learning activity multiple choice.",
+	"iloEndText": "end of activity",
+	"iloStartLink": "Take multiple choice or press link to skip to the end of activity.",
+	"iloEndLink": "press link to return to start of multiple choice",
+	"questions": [
+		{
+			"questionText": "In Margaret Atwood’s dystopian novel The Year of the Flood, reckless and inhumane behaviour among the humans leads to a world on the brink of destruction.",
+			"type": "single",
+			"questionImg": "../assets/Module1/img/01/05-01.png",
+			"questionImgAlt": "sample test alt text",
+			"answerOptions": [
+				{
+					"answerText": "Character vs Character",
+					"isCorrect": false,
+					"responseText": "Try again! Did you think about what the fish may symbolize?"
+				},
+				{
+					"answerText": "Character vs Nature",
+					"isCorrect": true,
+					"responseText": "That’s correct! Although unseen, the fish is the symbol of all of nature."
+				},
+				{
+					"answerText": "Character vs Self",
+					"isCorrect": false,
+					"responseText": "Try again! Did you think about what the fish may symbolize?"
+				},
+				{
+					"answerText": "Character vs Technology",
+					"isCorrect": false,
+					"responseText": "Not quite! Although unseen, the fish is the symbol of all of nature, so this is an example of Character vs Nature."
+				}
+			]
+		}
+	]
+}
