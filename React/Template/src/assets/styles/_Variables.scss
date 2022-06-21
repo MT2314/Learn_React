@@ -11,10 +11,10 @@ $tfo_black_border: #949494;
 $blue: #00a3bf;
 $white: #ffffff;
 $hover_outline: #bf7db7;
+$hover_fill: #7b0f6c;
 $disabled_fill: #d4a9ce;
 $tfo_dark_purple: #3b144d;
 $tfo_component_buttons: #932784;
-$hover_fill: #7b0f6c;
 
 // ? Reset
 * {
@@ -105,11 +105,14 @@ ol {
     font: normal normal 350 14px/21px Montserrat;
   }
 }
+p {
+  margin-bottom: 20px;
+}
 
 .italic {
   font-style: italic;
 }
-.heading {
+.heading .bold {
   font-weight: 700;
 }
 

@@ -5,13 +5,13 @@
 @import "Widgets";
 
 .Course-Content {
-  background-color: #f8f8f8;
+  background-color: $background;
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: $background;
   font-family: Montserrat;
   color: $tfo_black;
   overflow-y: visible;

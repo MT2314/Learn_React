@@ -1,44 +1,30 @@
 import React, {useState, useEffect, useRef} from "react";
 
 // ? Section - Working Section
-const Section = ({children, type, block, collapse, position}) => {
-  if (block) {
-    return (
-      <div
-        className={`Block ${type ? type : ""} ${collapse ? collapse : ""} ${
-          position ? position : ""
-        }`}
-      >
-        {children}
-      </div>
-    );
-  } else if (type && !block) {
-    return (
-      <div className={`Section`}>
-        <div className={`${type}`}>{children}</div>
-      </div>
-    );
-  }
-  // ? Default Large / Blue blockquote
-  else {
-    return <div className={`Section`}>{children}</div>;
-  }
+export const Section = ({children, type, block, collapse, columns}) => {
+  return (
+    <div
+      className={`${block ? "Block" : "Section"} ${type ? type : ""} ${
+        collapse ? collapse : ""
+      }`}
+    >
+      {children}
+    </div>
+  );
 };
 // ? Block - Full Width
-const Block = ({children, type, wide, collapse, position}) => {
+export const Block = ({children, type, collapse}) => {
   return (
     <Section
       children={children}
       block={true}
-      type={type}
-      wide={wide}
+      type={`${type ? type : ""}`}
       collapse={collapse}
-      position={position}
     ></Section>
   );
 };
 // ? Banner Block
-const Banner = ({heading, subheading, image, text, type}) => {
+export const Banner = ({heading, subheading, image, text, type}) => {
   return (
     <div
       className={`Page-Banner ${image ? "with_img" : ""} ${type ? type : ""}`}
@@ -57,7 +43,7 @@ const Banner = ({heading, subheading, image, text, type}) => {
   );
 };
 // ? Text Block
-const Text = ({text, list, type}) => {
+export const Text = ({text, list, type}) => {
   return typeof text == "string" ? (
     <div className={`Text`}>
       <p className={type ? type : ""}>{`${text}`}</p>
@@ -94,7 +80,7 @@ const Text = ({text, list, type}) => {
 };
 
 // ? BlockQuote Block
-const Blockquote = ({type, color, text}) => {
+export const Blockquote = ({type, color, text}) => {
   // ? If type is set to Small / Purple blockquote
 
   switch (type) {
@@ -131,7 +117,7 @@ const Blockquote = ({type, color, text}) => {
 };
 
 // ? Image Block
-const Image = ({img, alt, position, children}) => {
+export const Image = ({img, alt, position, children}) => {
   const myClass = () => {
     if (position === "left") {
       return "img-left";
@@ -164,7 +150,7 @@ const Image = ({img, alt, position, children}) => {
 // ? Question / Answer
 
 // * Banner
-const WidgetBanner = ({current, widgetRef, order}) => {
+export const WidgetBanner = ({current, widgetRef, order}) => {
   return (
     <div className={`Dynamic-Banner ${current[0]}`} ref={widgetRef}>
       <div className="Dynamic-Pill">
@@ -180,7 +166,7 @@ const WidgetBanner = ({current, widgetRef, order}) => {
 };
 
 // * ILO Container
-const DynamicBlock = ({children, order}) => {
+export const DynamicBlock = ({children, order}) => {
   const [currentType, setCurrentType] = useState(0);
   const [totalQ, setTotalQ] = useState();
   const [totalD, setTotalD] = useState();
@@ -223,7 +209,7 @@ const DynamicBlock = ({children, order}) => {
 };
 
 // * Widget Nav
-const WidgetNav = ({
+export const WidgetNav = ({
   current,
   executeScroll,
   setCurrentType,
@@ -265,7 +251,7 @@ const WidgetNav = ({
 };
 
 // ? Icon
-const Icons = ({text, type}) => {
+export const Icons = ({text, type}) => {
   return (
     <div className={`Icons ${type ? type : ""}`}>
       <span>{text}</span>
@@ -274,7 +260,7 @@ const Icons = ({text, type}) => {
 };
 
 // ? List
-const List = ({list, type, indent}) => {
+export const List = ({list, type, indent}) => {
   if (!type) {
     type = "large";
   }
@@ -283,7 +269,7 @@ const List = ({list, type, indent}) => {
     return (
       <ol
         type="a"
-        className={`List ${type ? type : ""} ${indent ? "" : "noIndent"}`}
+        className={`List ${type ? type : ""} ${indent ? "Indent" : ""}`}
       >
         {typeof list == "string" || list.length == 1 ? (
           <li>
@@ -303,8 +289,8 @@ const List = ({list, type, indent}) => {
   else if (type === "numeric")
     return (
       <ol
-        start="9"
-        className={`List ${type ? type : ""} ${indent ? "" : "noIndent"}`}
+        start="1"
+        className={`List ${type ? type : ""} ${indent ? "Indent" : ""}`}
       >
         {typeof list == "string" || list.length == 1 ? (
           <li>
@@ -323,7 +309,7 @@ const List = ({list, type, indent}) => {
     );
   else
     return (
-      <ul className={`List ${type ? type : ""} ${indent ? "" : "noIndent"}`}>
+      <ul className={`List ${type ? type : ""} ${indent ? "Indent" : ""}`}>
         {typeof list == "string" || list.length == 1 ? (
           <li>
             <span>{list}</span>
@@ -341,7 +327,7 @@ const List = ({list, type, indent}) => {
     );
 };
 // ? List
-const Table = ({list, type}) => {
+export const Table = ({list, type}) => {
   return (
     <ul className={`List ${type ? type : ""}`}>
       {typeof list == "string" || list.length == 1 ? (
@@ -356,7 +342,7 @@ const Table = ({list, type}) => {
 };
 // ? Buttons
 
-const Button = ({type, link, text, heading, size}) => {
+export const Button = ({type, link, text, heading, size}) => {
   if (type === "link") {
     return (
       <div className={`Button ${size ? size : "medium"}`}>
@@ -398,7 +384,7 @@ const Button = ({type, link, text, heading, size}) => {
 };
 
 // ? Thematic vocabulary
-const Thematic_Vocabulary = ({title, text, list}) => {
+export const Thematic_Vocabulary = ({title, text, list}) => {
   return (
     <div className="Thematic_Vocabulary">
       <h3>{title}</h3>
@@ -412,7 +398,7 @@ const Thematic_Vocabulary = ({title, text, list}) => {
   );
 };
 // ? Learning Goals
-const LearningGoals = ({goals}) => {
+export const LearningGoals = ({goals}) => {
   return (
     <div className="learning_goals">
       <h3>Learning Goals for This Challenge</h3>
@@ -432,7 +418,7 @@ const LearningGoals = ({goals}) => {
 };
 
 // ? Learning Skills & Habits
-const LearningSkillsHabits = ({skills, habits}) => {
+export const LearningSkillsHabits = ({skills, habits}) => {
   return (
     <div className="learning_skills">
       <h3>Learning Skills and Work Habits for This Challenge</h3>
@@ -473,7 +459,7 @@ const LearningSkillsHabits = ({skills, habits}) => {
 };
 
 // ? Discussion Forum
-const Discussion_Forum = ({heading, linkText, link}) => {
+export const Discussion_Forum = ({heading, linkText, link}) => {
   return (
     <div className="Discussion_Forum">
       <div className="icon">
@@ -489,7 +475,7 @@ const Discussion_Forum = ({heading, linkText, link}) => {
   );
 };
 // ? Discussion Forum
-const Submit_Work = ({heading, subheading}) => {
+export const Submit_Work = ({heading, subheading}) => {
   return (
     <div className="Submit_Work">
       <div className="icon">
@@ -503,31 +489,10 @@ const Submit_Work = ({heading, subheading}) => {
   );
 };
 // ? Discussion Forum
-const Remember = ({heading, subheading}) => {
+export const Remember = ({heading, subheading}) => {
   return (
     <div className="Remember">
       <img src="/assets/icons/remember.svg" alt="Submit Icon" />
     </div>
   );
-};
-
-export {
-  Section,
-  Block,
-  Blockquote,
-  LearningGoals,
-  LearningSkillsHabits,
-  Banner,
-  WidgetBanner,
-  DynamicBlock,
-  Icons,
-  Text,
-  Table,
-  Image,
-  List,
-  Button,
-  Thematic_Vocabulary,
-  Remember,
-  Discussion_Forum,
-  Submit_Work,
 };

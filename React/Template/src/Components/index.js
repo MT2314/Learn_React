@@ -51,5 +51,5 @@ export {
   Thematic_Vocabulary,
   Remember,
   Discussion_Forum,
-  Submit_Work,
+  Submit_Work
 };
