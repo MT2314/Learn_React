@@ -384,12 +384,18 @@ export const Button = ({type, link, text, heading, size}) => {
 };
 
 // ? Thematic vocabulary
-export const Thematic_Vocabulary = ({title, text, list}) => {
+export const Thematic_Vocabulary = ({title, text, list, collapse}) => {
   return (
     <div className="Thematic_Vocabulary">
       <h3>{title}</h3>
-      <p>{text}</p>
-      <div>
+      {typeof text == "string" || text.length < 1 ? (
+        <p>{text}</p>
+      ) : (
+        text.map((v, i) => {
+          return <p>{v}</p>;
+        })
+      )}
+      <div className={`${collapse ? collapse : ""}`}>
         {list.map((item) => (
           <span className="item">{item}</span>
         ))}

@@ -13,74 +13,41 @@ import {
   Accordion,
   AccordionItem,
 } from "../Components/index";
+
 const Page1 = () => {
   return (
     <div className="Course-Content">
       <h1 style={{marginTop: "100px"}}>Blocking</h1>
       <div id="Blocking">
-        <Section type="Grey">
-          <Block type="Column-2" collapse="Tablet">
-            <Block type="White Wide">
-              <h4 className="Padding-20">TFO Layout's</h4>
+        <Section type="White">
+          <Block type="Column-2 " collapse="Tablet">
+            <Block type="Grey Box">
+              <h4>TFO Layout's</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Block>
-            <Block type="Box">
+            <Block type="Box Grey">
               <h4>Welcome to TFO Layout's</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Block>
           </Block>
         </Section>
       </div>
-      <h1 style={{marginTop: "100px"}}>Banners</h1>
-      <div id="Page Banners">
-        <Section>
-          <Banner
-            heading={"Brainstorm: Words Related to Stories"}
-            subheading={"Stories are part of the human experience"}
-            image={"assets/Module1/img/01/sample.png"}
-          />
-        </Section>
-        <Section>
-          <Banner
-            heading={"Pour aller plus loin"}
-            subheading={"Aimerais-tu en apprendre davantage?"}
-            type={"learn-more"}
-            text={
-              "Les contenus supplémentaires qui suivent te permettront d’aller plus loin dans ton exploration du sujet."
-            }
-          />
-        </Section>
-      </div>
-      <h1 style={{marginTop: "100px"}}>Blockquotes</h1>
-      <div id="Blockquotes">
-        {/* Blockquotes */}
-        <Section>
-          <Blockquote
-            text={
-              "How do the literary devices found in narration (e.g., plot, character, conflict, setting, etc.) help properly structure a story in order to allow for a deeper understanding?"
-            }
-          />
-        </Section>
-        <Section>
-          <Blockquote
-            text={
-              "How do the literary devices found in narration (e.g., plot, character, conflict, setting, etc.) help properly structure a story in order to allow for a deeper understanding?"
-            }
-            type={"small"}
-          />
-        </Section>
-      </div>
+
       <h1 style={{marginTop: "100px"}}>Lists</h1>
       <div id="Lists">
         <Section>
-          <Block>
+          <Block type="Grey Padding-20">
+            <h1 className="h3 Purple">First Lists</h1>
             <List
               list={[
                 `un logiciel de traitement de texte un logiciel de correction`,
                 `un logiciel de correction grammaticale (p. ex., Antidote)`,
               ]}
             />
-
+          </Block>
+        </Section>
+        <Section>
+          <Block>
             <List
               type={"small"}
               list={[
@@ -88,7 +55,9 @@ const Page1 = () => {
                 `un logiciel de correction grammaticale (p. ex., Antidote)`,
               ]}
             />
+          </Block>
 
+          <Block>
             <List
               indent={true}
               type={"sub"}
@@ -97,15 +66,19 @@ const Page1 = () => {
                 `un logiciel de correction grammaticale (p. ex., Antidote)`,
               ]}
             />
+          </Block>
 
+          <Block>
             <List
-              indent={true}
               type={"alphabetic"}
               list={[
                 `un logiciel de traitement de texte un logiciel de correction`,
                 `un logiciel de correction grammaticale (p. ex., Antidote)`,
               ]}
             />
+          </Block>
+
+          <Block>
             <List
               type={"numeric"}
               list={[
@@ -116,6 +89,42 @@ const Page1 = () => {
           </Block>
         </Section>
       </div>
+
+      <h1 style={{marginTop: "100px"}}>Banners</h1>
+      <div id="Page Banners">
+        <Section>
+          <Banner
+            heading={"Brainstorm: Words Related to Stories"}
+            subheading={"Stories are part of the human experience"}
+            image={"assets/Module1/img/01/sample.png"}
+          />
+        </Section>
+
+        <Section>
+          <Banner
+            heading={"Pour aller plus loin"}
+            subheading={"Aimerais-tu en apprendre davantage?"}
+            type={"activity"}
+            text={
+              "Les contenus supplémentaires qui suivent te permettront d’aller plus loin dans ton exploration du sujet."
+            }
+          />
+        </Section>
+      </div>
+
+      <h1 style={{marginTop: "100px"}}>Blockquotes</h1>
+      <div id="Blockquotes">
+        <Section>
+          <Blockquote text="How do the literary devices found in narration (e.g., plot, character, conflict, setting, etc.) help properly structure a story in order to allow for a deeper understanding?" />
+        </Section>
+        <Section>
+          <Blockquote
+            text="How do the literary devices found in narration (e.g., plot, character, conflict, setting, etc.) help properly structure a story in order to allow for a deeper understanding?"
+            type="small"
+          />
+        </Section>
+      </div>
+
       <h1 style={{marginTop: "100px"}}>Text Sizes</h1>
       <div id="Text-Sizes">
         <Section>
@@ -160,7 +169,6 @@ const Page1 = () => {
               Lorem Ipsum.
             </i>
           </p>
-          <p></p>
           <p>
             <b>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -217,19 +225,21 @@ const Page1 = () => {
       <h1 style={{marginTop: "100px"}}>Learning Goals and Skills</h1>
       <div id="Learning Goals and Skills">
         <Section>
-          <LearningGoals goals={[`Goal 1`, `Goal 2`, `Goal 3`, `Goal 4`]} />
-
-          <LearningSkillsHabits skills={[`Skill`]} habits={[`Habit`]} />
+          <LearningGoals goals={[`Rest`, `Goal 2`, `Goal 3`, `Goal 4`]} />
+          <LearningSkillsHabits skills={[`Skill`]} habits={[`Goal 4`]} />
         </Section>
       </div>
-      <h1 style={{marginTop: "100px"}}>Learning Goals and Skills</h1>
+      <h1 style={{marginTop: "100px"}}>Thematic Vocabulary</h1>
       <div id="Thematic Vocabulary">
         <Section type="Grey">
           <Thematic_Vocabulary
+            collapse="tablet"
             title={`Thematic Vocabulary for This Challenge`}
             text={[
-              `You will discover the following words or expressions during your challenge. 
-				  Make sure to apply reading strategies to develop an understanding of these words.`,
+              `You will discover the following words or expressions
+            during your challenge.`,
+              `Make sure to apply reading strategies to develop an 
+          understanding of these words.`,
             ]}
             list={[
               `literary devices`,
@@ -238,10 +248,17 @@ const Page1 = () => {
               `novel`,
               `setting `,
               `protagonist`,
+              `novel`,
+              `setting `,
+              `protagonist`,
+              `novel`,
+              `setting `,
+              `protagonist`,
             ]}
           />
         </Section>
       </div>
+
       <h1 style={{marginTop: "100px"}}>Accordions</h1>
       <div id="Accordions">
         <Section>

@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "component-library": "git+https://gitlab.tvo.org/tfo_test/component-library.git#0.0.8"
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "fs-extra": "^10.1.0",

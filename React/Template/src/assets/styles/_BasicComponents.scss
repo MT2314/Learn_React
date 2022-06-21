@@ -98,6 +98,17 @@
       padding-top: 0;
     }
   }
+  &-60 {
+    padding: 60px 0;
+    &-Top {
+      padding-top: 60px;
+      padding-bottom: 0;
+    }
+    &-Bottom {
+      padding-bottom: 60px;
+      padding-top: 0;
+    }
+  }
 }
 .Margin {
   margin: 40px 0;
@@ -855,6 +866,11 @@
     }
     @include mobile {
       height: auto;
+    }
+    &.Tablet {
+      @include tablet {
+        height: auto;
+      }
     }
   }
   @include mobile {
