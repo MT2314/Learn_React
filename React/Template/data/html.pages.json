@@ -1,28 +1,28 @@
 [
 	{
-		"title": "Page 1",
+		"title": "Day4",
 		"module": "DO_NOT_DELETE",
 		"challenge": "Challenge 1",
-		"page": "Page1",
-		"filename": "Page1",
+		"page": "Day4",
+		"filename": "Day4",
 		"discussion": ["https://random.com", "https://random.com"],
 		"dropbox": ["https://random.com", "https://random.com"]
 	},
 	{
-		"title": "Page 2",
+		"title": "Introduction",
 		"module": "DO_NOT_DELETE",
 		"challenge": "Challenge 1",
-		"page": "Page2",
-		"filename": "Page2",
+		"page": "Introduction",
+		"filename": "Introduction",
 		"discussion": ["https://random.com", "https://random.com"],
 		"dropbox": ["https://random.com", "https://random.com"]
 	},
 	{
-		"title": "Page 3",
+		"title": "Widgets",
 		"module": "DO_NOT_DELETE",
 		"challenge": "Challenge 1",
-		"page": "Page3",
-		"filename": "Page3",
+		"page": "Widgets",
+		"filename": "Widgets",
 		"discussion": ["https://random.com", "https://random.com"],
 		"dropbox": ["https://random.com", "https://random.com"]
 	}
