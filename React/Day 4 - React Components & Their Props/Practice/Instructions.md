@@ -21,9 +21,7 @@ https://xd.adobe.com/view/347c2a35-280d-4c2a-ac0f-656df36fc314-612f/screen/adc1b
 #### Add the Widget assigned to you at the bottom of the page
 
 - [Jhonny, Anjali] **Accordion, Text Carousel**
-
 - [Lynn, Chanho ] **Tab, Photo Carousel**
-
 - [Bryan, Vincent] **Timeline Tab, Text Carousel**
 - [Cornelia, Colette , Angeline] **Accordion, Photo Carousel**
 
