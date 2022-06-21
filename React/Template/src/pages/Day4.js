@@ -214,6 +214,7 @@ const Page1 = () => {
           </Image>
         </Section>
       </div>
+      <h1 style={{marginTop: "100px"}}>Learning Goals and Skills</h1>
       <div id="Learning Goals and Skills">
         <Section>
           <LearningGoals goals={[`Goal 1`, `Goal 2`, `Goal 3`, `Goal 4`]} />
@@ -221,6 +222,7 @@ const Page1 = () => {
           <LearningSkillsHabits skills={[`Skill`]} habits={[`Habit`]} />
         </Section>
       </div>
+      <h1 style={{marginTop: "100px"}}>Learning Goals and Skills</h1>
       <div id="Thematic Vocabulary">
         <Section type="Grey">
           <Thematic_Vocabulary
@@ -239,9 +241,11 @@ const Page1 = () => {
             ]}
           />
         </Section>
+      </div>
+      <h1 style={{marginTop: "100px"}}>Accordions</h1>
+      <div id="Accordions">
         <Section>
           <Block>
-            <h2>Accordion</h2>
             <Accordion>
               <AccordionItem
                 title="Accordéon 1"
@@ -268,6 +272,7 @@ const Page1 = () => {
             </Accordion>
           </Block>
         </Section>
+        <div style={{paddingTop: "100px"}}></div>
       </div>
     </div>
   );
