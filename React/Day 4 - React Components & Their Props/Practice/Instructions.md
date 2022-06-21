@@ -8,23 +8,16 @@
 
 ## June 21th Assignment
 
-### Build out the Challenge Introduction Page
-Group1: Accordion, Text Carousel
+### Part 1
 
-Group2: Tab, Photo Carousel
-
-Group3: Timeline Tab, Text Carousel
-
-Group4: Accordion, Photo Carousel
-
-*** Please include at least one image in each widget (Accordion, Tab, Timeline, Text Carousel), except for photo carousel always requires images. 
+#### Build out the Challenge Introduction Page
 
 ![Alt text](./IntroductionPage.jpg/?raw=true "Title")
 :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star:
 
 ### Part 2
 
-Add the Widget assigned to you at the bottom of the page
+#### Add the Widget assigned to you at the bottom of the page
 
 - [Jhonny, Anjali] **Accordion, Text Carousel**
 
