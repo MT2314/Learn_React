@@ -25,15 +25,6 @@ import {
   Remember,
   Discussion_Forum,
 } from "../Components/index";
-import {
-  DragDropMatching,
-  ImageHotspots,
-  MultipleChoiceCheckbox,
-  MultipleChoiceComponent,
-  Sorting,
-  Tooltip,
-  Flowchart,
-} from "component-library/src";
 
 const Widgets = () => {
   return (
