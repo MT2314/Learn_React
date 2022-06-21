@@ -12,3 +12,16 @@
 
 ![Alt text](./IntroductionPage.jpg/?raw=true "Title")
 :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: :star:
+
+### Part 2
+
+Add the Widget assigned to you at the bottom of the page
+
+- [Jhonny, Anjali] **Accordion, Text Carousel**
+
+- [Lynn, Chanho ] **Tab, Photo Carousel**
+
+- [Bryan, Vincent] **Timeline Tab, Text Carousel**
+- [Cornelia, Colette , Angeline] **Accordion, Photo Carousel**
+
+**Please include at least one image in each widget (Accordion, Tab, Timeline, Text Carousel), except for photo carousel always requires images.**
