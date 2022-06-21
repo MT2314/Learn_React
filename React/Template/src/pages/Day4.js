@@ -10,6 +10,8 @@ import {
   Image,
   LearningSkillsHabits,
   Thematic_Vocabulary,
+  Accordion,
+  AccordionItem,
 } from "../Components/index";
 const Page1 = () => {
   return (
@@ -237,8 +239,35 @@ const Page1 = () => {
             ]}
           />
         </Section>
-
-        <div style={{marginTop: "100px"}}>Images</div>
+        <Section>
+          <Block>
+            <h2>Accordion</h2>
+            <Accordion>
+              <AccordionItem
+                title="Accordéon 1"
+                text="On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte."
+              />
+              <AccordionItem
+                title="Accordéon 2"
+                text="On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte."
+              />
+              <AccordionItem
+                title="Accordéon 3"
+                text={[
+                  "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.",
+                  "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte.",
+                ]}
+                img={[
+                  {
+                    src: "assets/Module1/img/01/05-01.png",
+                    alt: "exemple d'image",
+                    size: "portrait",
+                  },
+                ]}
+              />
+            </Accordion>
+          </Block>
+        </Section>
       </div>
     </div>
   );
